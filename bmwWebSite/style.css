@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+    grid-template-rows: 100px 750px 80px;
+    gap: 15px;
+    background: url(../images/bmw-arka-plan.jpg) no-repeat center/cover;
+}
+header{
+  display: flex;
+  align-items: center;
+  background-color: rgba(26, 77, 100, 0.3);
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+header > img{
+    flex: 0 0 1%;
+    height: 50px;
+}
+header > span{
+    display: flex;
+    flex: 0 0 80%;
+    flex-wrap: wrap;
+}
+header > span > a{
+    flex: 0 0 15%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+form > input[type=text]{
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0px solid white;
+}
+main{
+  
+}
+footer{
+    
+}
+@media only screen and (max-width: 500px) {
+    body {
+      grid-template-columns: 400px 400px 400px;
+    }
+  }
